@@ -123,7 +123,7 @@ class PointNetfeatNormal(nn.Module):
             return x
 
 #OUR METHOD
-import resnet
+from . import resnet
 
 class PointGenCon(nn.Module):
     def __init__(self, bottleneck_size = 2500):
