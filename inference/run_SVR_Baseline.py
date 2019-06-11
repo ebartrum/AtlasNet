@@ -3,11 +3,10 @@ import argparse
 import random
 import torch
 import sys
-sys.path.append('./auxiliary/')
-from dataset import *
-from model import *
-from utils import *
-from ply import *
+from AtlasNet.dataset import *
+from AtlasNet.model import *
+from AtlasNet.utils import *
+from AtlasNet.ply import *
 import os
 import json
 import pandas as pd
