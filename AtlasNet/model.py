@@ -145,8 +145,6 @@ class AtlasNet(nn.Module):
         x = self.encoder(x)
         return self.forward_inference_from_latent_space(x, grid)
     def forward_inference_from_latent_space(self, x, grid):
-        import pdb
-        grid = torch.Tensor(grid)
         if self.usecuda:
             grid = grid.cuda()
         grid = grid.transpose(1,2).contiguous().unsqueeze(1)
