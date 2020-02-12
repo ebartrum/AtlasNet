@@ -1,4 +1,4 @@
-🚀 Major upgrade 🚀 : Migration to  **Pytorch v1** and **Python 3.7**. The code is now much more generic and easy to install. 
+Major upgrade : Migration to  **Pytorch v1** and **Python 3.7**. The code is now much more generic and easy to install. 
 
 # AtlasNet
 
