@@ -6,6 +6,7 @@ import torch.utils.data
 from torch.autograd import Variable
 import numpy as np
 import torch.nn.functional as F
+import torchvision
 
 #UTILITIES
 class STN3d(nn.Module):
@@ -225,7 +226,7 @@ class SVR_AtlasNet_SPHERE(nn.Module):
 
         self.bottleneck_size = bottleneck_size
         self.nb_primitives = nb_primitives
-        self.encoder = resnet.resnet18(pretrained=self.pretrained_encoder, num_classes=1024)
+        self.encoder = torchvision.models.resnet18(num_classes=1024)
         self.decoder = nn.ModuleList([PointGenCon(bottleneck_size = 3 +self.bottleneck_size) for i in range(0,self.nb_primitives)])
 
 
